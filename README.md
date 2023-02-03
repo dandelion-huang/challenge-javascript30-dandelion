@@ -6,4 +6,13 @@
 
 原專案 Github Repository: [https://github.com/wesbos/JavaScript30](https://github.com/wesbos/JavaScript30)
 <br />
-此專案 gh-page: [Demo](https://dandelion64.github.io/JavaScript30-dandelion)
+此專案 gh-page: [demo](https://dandelion64.github.io/JavaScript30-dandelion)
+
+## Demo
+
+以下為 demo 列表：
+
+| 題目 | 成果 | 筆記 |
+| --- | --- | --- |
+| Day 01. JavaScript Drum Kit  | [連結](https://dandelion64.github.io/JavaScript30-dandelion/01%20-%20JavaScript%20Drum%20Kit/) | [筆記](https://dandelion64.github.io/JavaScript30-dandelion/tree/main/01%20-%20JavaScript%20Drum%20Kit/) |
+
