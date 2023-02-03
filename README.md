@@ -14,5 +14,5 @@
 
 | 題目 | 成果 | 筆記 |
 | --- | --- | --- |
-| Day 01. JavaScript Drum Kit  | [連結](https://dandelion64.github.io/JavaScript30-dandelion/01%20-%20JavaScript%20Drum%20Kit/) | [筆記](https://dandelion64.github.io/Javascript30-dandelion/tree/main/01%20-%20JavaScript%20Drum%20Kit) |
+| Day 01. JavaScript Drum Kit  | [連結](https://dandelion64.github.io/JavaScript30-dandelion/01%20-%20JavaScript%20Drum%20Kit/) | [筆記](https://github.com/dandelion64/Javascript30-dandelion/tree/main/01%20-%20JavaScript%20Drum%20Kit) |
 
