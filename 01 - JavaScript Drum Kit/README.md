@@ -136,14 +136,14 @@ window.addEventListener('keyup', removeHighlightKeyStyle);
 ### 參考資料
 
 * [keycode-info](https://uiwjs.github.io/keycode-info/)
-* [<kbd> - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd)
+* [\<kbd\> - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd)
 * [data-* - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 * [Element: keydown event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event)
 * [Element: keyup event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event)
 * [Element: keypress event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/keypress_event)
 * [EventListener - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 * [KeyboardEvent - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
-* [<audio> - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
+* [\<audio\> - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
 * [Template literals (Template strings) - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 * [Arrow function expressions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 * [Element.classList - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
