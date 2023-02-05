@@ -68,6 +68,5 @@ const setDate = () => {
 	setTimeout(setDate, 60);
 };
 
-setTimeout(setTransition, 0);
-
+setTransition();
 setDate();
