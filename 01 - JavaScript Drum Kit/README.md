@@ -131,7 +131,7 @@ window.addEventListener('keyup', removeHighlightKeyStyle);
 
 可以嘗試把函式也綁定到 `MouseEvent` 上，會另外使用到 `Element.closest()` 方法，也會針對一些滑鼠才會觸發的問題，像是 `user-select` 這個 CSS property 和 `mouseleave` 事件做處理。
 
-有興趣的話可以參考此專案原始碼。
+有興趣的話可以參考此專案 repo。
 
 ### 參考資料
 
