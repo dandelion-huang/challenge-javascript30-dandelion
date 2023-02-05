@@ -151,24 +151,24 @@ const minHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
 const setDate = () => {
-	const now = new Date();
+    const now = new Date();
+    
+    const seconds = now.getSeconds();
+    const secondsDegrees = (seconds / 60) * 360;
 
-	const seconds = now.getSeconds();
-	const secondsDegrees = (seconds / 60) * 360;
+    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
-	secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+    const mins = now.getMinutes();
+    const minsDegrees = (mins / 60) * 360 + (seconds / 60) * 6;
 
-	const mins = now.getMinutes();
-	const minsDegrees = (mins / 60) * 360 + (seconds / 60) * 6;
+    minHand.style.transform = `rotate(${minsDegrees}deg)`;
 
-	minHand.style.transform = `rotate(${minsDegrees}deg)`;
+    const hours = now.getHours();
+    const hoursDegrees = (hours / 12) * 360 + (mins / 60) * 30;
 
-	const hours = now.getHours();
-	const hoursDegrees = (hours / 12) * 360 + (mins / 60) * 30;
+    hourHand.style.transform = `rotate(${hoursDegrees}deg`;
 
-	hourHand.style.transform = `rotate(${hoursDegrees}deg`;
-
-	setTimeout(setDate, 60);
+    setTimeout(setDate, 60);
 }
 
 setDate();
@@ -182,15 +182,15 @@ setDate();
 
 ``` css
 .hour-hand {、
-  transform-origin: 4px 100%; /* half of the width of the clock hands */
+    transform-origin: 4px 100%; /* half of the width of the clock hands */
 }
 
 .min-hand {
-  transform-origin: 3px 100%; /* half of the width of the clock hands */
+    transform-origin: 3px 100%; /* half of the width of the clock hands */
 }
 
 .second-hand {
-  transform-origin: 2px 100%; /* half of the width of the clock hands */
+    transform-origin: 2px 100%; /* half of the width of the clock hands */
 ```
 
 雖然旋轉定位點的問題解決了，但是指針位置還是不正確。這是因為我們寫在 `style.css` 中的 `transform: translate();` 內容完全被 JavaScript 加上的 inline-style 覆蓋掉了。
