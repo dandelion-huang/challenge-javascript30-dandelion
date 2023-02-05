@@ -1,0 +1,81 @@
+html {
+  background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+  background-size: cover;
+  font-family: 'helvetica neue';
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow:
+    0 0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 2px 2px #EFEFEF,
+    inset 0 0 15px black,
+    0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.clock-face::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 0 2px rgba(0, 0, 0, 0.1),
+    0 0 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hand {
+  background: black;
+  position: absolute;
+  left: 50%;
+  box-shadow:
+    3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hour-hand {
+  width: 8px;
+  height: 30%;
+  transform-origin: 4px 100%; /* half of the width of the clock hands */
+  border-radius: 4px; /* half of the width of the clock hands */
+}
+
+.min-hand {
+  width: 6px;
+  height: 40%;
+  transform-origin: 3px 100%; /* half of the width of the clock hands */
+  border-radius: 3px; /* half of the width of the clock hands */
+}
+
+.second-hand {
+  width: 4px;
+  height: 50%;
+  background: red;
+  transform-origin: 2px 100%; /* half of the width of the clock hands */
+  border-radius: 2px; /* half of the width of the clock hands */
+}
