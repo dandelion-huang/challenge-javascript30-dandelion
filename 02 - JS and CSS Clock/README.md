@@ -273,7 +273,7 @@ secondHand.style.transition = 'transform 1s';
 // ...
 ```
 
-> 竟然是逆時針走的... 也就是說在那個瞬間是從 `354deg` 旋轉到 `0deg`。
+> 竟然是逆時針走的...也就是說在那個瞬間是從 `354deg` 旋轉到 `0deg`。
 
 我們可以在這個特殊的時刻讓 `transition: transform 0s` 來解決這個問題。
 
