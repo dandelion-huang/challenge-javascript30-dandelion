@@ -47,6 +47,26 @@ const removeHighlightKeyStyle = (e) => {
 	}
 };
 
+let timeoutId = null;
+
+const touchHightlightKeyStyle = () => {
+	const keyCode = e.target.closest('.key').dataset.keyCode;
+
+	const key = document.querySelector(`.key[data-key-code=${keyCode}]`);
+
+    key.classList.add('playing');
+
+    if (timeoutId) clearTimeout(timeoutId);
+
+    timeoutId = setTimeout(() => {
+        if (key.classList.contains('playing')) {
+            key.classList.remove('playing');
+        }
+
+        timeoutId = null;
+    }, 70);
+}
+
 window.addEventListener('keydown', playSound);
 window.addEventListener('keydown', highlightKeyStyle);
 window.addEventListener('keyup', removeHighlightKeyStyle);
@@ -61,7 +81,6 @@ keys.forEach((key) => {
 });
 
 keys.forEach((key) => {
-    key.addEventListener('touchstart', playSound);
-	key.addEventListener('touchstart', highlightKeyStyle);
-	key.addEventListener('touchend', removeHighlightKeyStyle);
+    key.addEventListener('touch', playSound);
+	key.addEventListener('touch', touchHightlightKeyStyle);
 });
