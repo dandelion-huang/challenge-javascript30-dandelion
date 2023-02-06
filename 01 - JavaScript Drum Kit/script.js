@@ -52,9 +52,16 @@ window.addEventListener('keydown', highlightKeyStyle);
 window.addEventListener('keyup', removeHighlightKeyStyle);
 
 const keys = document.querySelectorAll('.key');
+
 keys.forEach((key) => {
 	key.addEventListener('mousedown', playSound);
 	key.addEventListener('mousedown', highlightKeyStyle);
 	key.addEventListener('mouseup', removeHighlightKeyStyle);
 	key.addEventListener('mouseleave', removeHighlightKeyStyle);
+});
+
+keys.forEach((key) => {
+    key.addEventListener('touchstart', playSound);
+	key.addEventListener('touchstart', highlightKeyStyle);
+	key.addEventListener('touchend', removeHighlightKeyStyle);
 });
