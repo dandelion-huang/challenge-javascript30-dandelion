@@ -1,0 +1,52 @@
+:root {
+	--color-base: #ffc600;
+	--spacing: 10px;
+	--blur: 10px;
+	--brightness: 1;
+	--contrast: 100%;
+	--grayscale: 0%;
+	--opacity: 1;
+	--invert: 0%;
+}
+
+img {
+	padding: var(--spacing);
+	background-color: var(--color-base);
+	filter:
+    blur(var(--blur))
+    brightness(var(--brightness))
+    contrast(var(--contrast))
+    grayscale(var(--grayscale))
+    invert(var(--invert))
+    opacity(var(--opacity));
+}
+
+.hl {
+	color: var(--color-base);
+}
+
+/*
+  misc styles, nothing to do with CSS variables
+*/
+
+body {
+	text-align: center;
+	background: #193549;
+	color: white;
+	font-family: 'helvetica neue', sans-serif;
+	font-weight: 100;
+	font-size: 50px;
+}
+
+.controls {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	width: 60%;
+	margin: 0 auto 50px;
+}
+
+input {
+	width: 100px;
+}
