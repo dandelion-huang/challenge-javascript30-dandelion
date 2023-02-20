@@ -7,7 +7,6 @@
 * HTML `<label>` 和 `<input>` 標籤。
 * CSS Variables 與 `:root` pseudo class。
 
-
 ### 步驟
 
 > 按照慣例，CSS 相關的內容會解釋得比較簡單。
