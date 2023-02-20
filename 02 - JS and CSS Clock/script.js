@@ -38,10 +38,10 @@ const setDate = () => {
 	const mins = now.getMinutes();
 
 	if (shouldUpdateMin && shouldFixDegrees(mins)) {
-        shouldUpdateMin = false;
+		shouldUpdateMin = false;
 		++minRound;
 
-        setTimeout(() => {
+		setTimeout(() => {
 			shouldUpdateMin = true;
 		}, 1000);
 	}
@@ -53,10 +53,10 @@ const setDate = () => {
 	const hours = now.getHours();
 
 	if (shouldUpdateHour && shouldFixDegrees(hours)) {
-        shouldUpdateHour = false;
+		shouldUpdateHour = false;
 		++hourRound;
 
-        setTimeout(() => {
+		setTimeout(() => {
 			shouldUpdateHour = true;
 		}, 1000);
 	}

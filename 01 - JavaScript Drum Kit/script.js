@@ -16,7 +16,7 @@ const playSound = (e) => {
 };
 
 const highlightKeyStyle = (e) => {
-    let keyCode;
+	let keyCode;
 
 	if (e.type === 'mousedown') {
 		keyCode = e.target.closest('.key').dataset.keyCode;
@@ -32,7 +32,7 @@ const highlightKeyStyle = (e) => {
 };
 
 const removeHighlightKeyStyle = (e) => {
-    let keyCode;
+	let keyCode;
 
 	if (e.type === 'mouseup' || e.type === 'mouseleave') {
 		keyCode = e.target.closest('.key').dataset.keyCode;
@@ -54,18 +54,18 @@ const touchHightlightKeyStyle = () => {
 
 	const key = document.querySelector(`.key[data-key-code=${keyCode}]`);
 
-    key.classList.add('playing');
+	key.classList.add('playing');
 
-    if (timeoutId) clearTimeout(timeoutId);
+	if (timeoutId) clearTimeout(timeoutId);
 
-    timeoutId = setTimeout(() => {
-        if (key.classList.contains('playing')) {
-            key.classList.remove('playing');
-        }
+	timeoutId = setTimeout(() => {
+		if (key.classList.contains('playing')) {
+			key.classList.remove('playing');
+		}
 
-        timeoutId = null;
-    }, 70);
-}
+		timeoutId = null;
+	}, 70);
+};
 
 window.addEventListener('keydown', playSound);
 window.addEventListener('keydown', highlightKeyStyle);
@@ -81,6 +81,6 @@ keys.forEach((key) => {
 });
 
 keys.forEach((key) => {
-    key.addEventListener('touch', playSound);
+	key.addEventListener('touch', playSound);
 	key.addEventListener('touch', touchHightlightKeyStyle);
 });

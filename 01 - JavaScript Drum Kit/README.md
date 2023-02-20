@@ -40,8 +40,8 @@ window.addEventListener('keydown', (e) => {
 
 ``` html
 <div data-key="65" class="key">
-    <kbd>A</kbd>
-    <span class="sound">clap</span>
+  <kbd>A</kbd>
+  <span class="sound">clap</span>
 </div>
 <!-- ... -->
 
@@ -53,8 +53,8 @@ window.addEventListener('keydown', (e) => {
 
 ``` html
 <div data-key-code="KeyA" class="key">
-    <kbd>A</kbd>
-    <span class="sound">clap</span>
+  <kbd>A</kbd>
+  <span class="sound">clap</span>
 </div>
 <!-- ... -->
 
@@ -66,12 +66,12 @@ window.addEventListener('keydown', (e) => {
 
 ``` js
 const playSound = (e) => {
-    const audio = document.querySelector(`audio[data-key-code=${e.code}]`);
+  const audio = document.querySelector(`audio[data-key-code=${e.code}]`);
 
-    if (audio === null) return; // early return
+  if (audio === null) return; // early return
 
-    audio.currentTime = 0; // reset the audio time
-    audio.play(); // play the audio
+  audio.currentTime = 0; // reset the audio time
+  audio.play(); // play the audio
 }
 ```
 
@@ -85,11 +85,11 @@ window.addEventListener('keydown', playSound);
 
 ``` js
 const highlightKeyStyle = (e) => {
-    const key = document.querySelector(`.key[data-key-code=${e.code}]`);
+  const key = document.querySelector(`.key[data-key-code=${e.code}]`);
 
-    if (key === null) return; // early return
+  if (key === null) return; // early return
 
-    key.classList.add('playing');
+  key.classList.add('playing');
 }
 
 window.addEventListener('keydown', highlightKeyStyle);
@@ -99,8 +99,8 @@ window.addEventListener('keydown', highlightKeyStyle);
 
 ``` js
 function removeTransition(e) {
-    if (e.propertyName !== 'transform') return;
-    e.target.classList.remove('playing');
+  if (e.propertyName !== 'transform') return;
+  e.target.classList.remove('playing');
 }
 
 // ...
@@ -117,11 +117,11 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
 ``` js
 const removeHighlightKeyStyle = (e) => {
-    const key = document.querySelector(`.key[data-key-code=${e.code}]`);
+  const key = document.querySelector(`.key[data-key-code=${e.code}]`);
 
-    if (key.classList.contains('playing')) {
-        key.classList.remove('playing');
-    }
+  if (key.classList.contains('playing')) {
+    key.classList.remove('playing');
+  }
 }
 
 window.addEventListener('keyup', removeHighlightKeyStyle);

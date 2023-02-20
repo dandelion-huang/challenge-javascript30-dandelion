@@ -16,30 +16,30 @@
 
 ``` css
 .hand {
-    background: black;
-    position: absolute;
-    left: 50%;
+  background: black;
+  position: absolute;
+  left: 50%;
 }
 
 .hour-hand {
-    width: 8px;
-    height: 30%;
-    transform-origin: 4px 100%;
-    transform: translate(-4px, 66.6667%);
+  width: 8px;
+  height: 30%;
+  transform-origin: 4px 100%;
+  transform: translate(-4px, 66.6667%);
 }
 
 .min-hand {
-    width: 6px;
-    height: 40%;
-    transform-origin: 3px 100%;
-    transform: translate(-3px, 25%);
+  width: 6px;
+  height: 40%;
+  transform-origin: 3px 100%;
+  transform: translate(-3px, 25%);
 }
 
 .second-hand {
-    width: 4px;
-    height: 50%;
-    transform-origin: 2px 100%;
-    transform: translate(-2px, 0);
+  width: 4px;
+  height: 50%;
+  transform-origin: 2px 100%;
+  transform: translate(-2px, 0);
 }
 ```
 
@@ -49,7 +49,7 @@
 
 ``` css
 .hidden {
-    opacity: 0;
+  opacity: 0;
 }
 ```
 
@@ -57,7 +57,7 @@
 
 ``` css
 .hidden {
-    visibility: hidden;
+  visibility: hidden;
 }
 ```
 
@@ -67,15 +67,15 @@
 
 ``` css
 .clock-face::after {
-    content: '';
-    width: 2rem;
-    height: 2rem;
-    background: black;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 ```
 
@@ -85,14 +85,14 @@
 
 ``` css
 .centered {
-    width: 2rem; /* required */
-    height: 2rem; /* required */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+  width: 2rem; /* required */
+  height: 2rem; /* required */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 ```
 
@@ -104,42 +104,42 @@
 
 ``` css
 .clock {
-    /* ... */
-    box-shadow:
-        0 0 2px 4px rgba(0, 0, 0, 0.1),
-        inset 0 0 2px 2px #EFEFEF,
-        inset 0 0 15px black,
-        0 0 10px 2px rgba(0, 0, 0, 0.2);
+  /* ... */
+  box-shadow:
+    0 0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 2px 2px #EFEFEF,
+    inset 0 0 15px black,
+    0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .clock-face::after {
-    /* ... */
-    box-shadow:
-        0 0 0 2px rgba(0, 0, 0, 0.1),
-        0 0 10px 2px rgba(0, 0, 0, 0.2);
+  /* ... */
+  box-shadow:
+    0 0 0 2px rgba(0, 0, 0, 0.1),
+    0 0 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hand {
-    /* ... */
-    box-shadow:
-        3px 5px 2px rgba(0, 0, 0, 0.3);
+  /* ... */
+  box-shadow:
+    3px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 .hour-hand {
-    /* ... */
-    border-radius: 4px; /* half of the width of the clock hands */
+  /* ... */
+  border-radius: 4px; /* half of the width of the clock hands */
 }
 
 .min-hand {
-    /* ... */
-    border-radius: 3px; /* half of the width of the clock hands */
+  /* ... */
+  border-radius: 3px; /* half of the width of the clock hands */
 }
 
 .second-hand {
-    /* ... */
-    background: red;
-    border-radius: 2px; /* half of the width of the clock hands */
-    /* ... */
+  /* ... */
+  background: red;
+  border-radius: 2px; /* half of the width of the clock hands */
+  /* ... */
 }
 ```
 
@@ -151,24 +151,24 @@ const minHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
 const setDate = () => {
-    const now = new Date();
-    
-    const seconds = now.getSeconds();
-    const secondsDegrees = (seconds / 60) * 360;
+  const now = new Date();
+  
+  const seconds = now.getSeconds();
+  const secondsDegrees = (seconds / 60) * 360;
 
-    secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
-    const mins = now.getMinutes();
-    const minsDegrees = (mins / 60) * 360 + (seconds / 60) * 6;
+  const mins = now.getMinutes();
+  const minsDegrees = (mins / 60) * 360 + (seconds / 60) * 6;
 
-    minHand.style.transform = `rotate(${minsDegrees}deg)`;
+  minHand.style.transform = `rotate(${minsDegrees}deg)`;
 
-    const hours = now.getHours();
-    const hoursDegrees = (hours / 12) * 360 + (mins / 60) * 30;
+  const hours = now.getHours();
+  const hoursDegrees = (hours / 12) * 360 + (mins / 60) * 30;
 
-    hourHand.style.transform = `rotate(${hoursDegrees}deg`;
+  hourHand.style.transform = `rotate(${hoursDegrees}deg`;
 
-    setTimeout(setDate, 60);
+  setTimeout(setDate, 60);
 }
 
 setDate();
@@ -182,15 +182,15 @@ setDate();
 
 ``` css
 .hour-hand {、
-    transform-origin: 4px 100%; /* half of the width of the clock hands */
+  transform-origin: 4px 100%; /* half of the width of the clock hands */
 }
 
 .min-hand {
-    transform-origin: 3px 100%; /* half of the width of the clock hands */
+  transform-origin: 3px 100%; /* half of the width of the clock hands */
 }
 
 .second-hand {
-    transform-origin: 2px 100%; /* half of the width of the clock hands */
+  transform-origin: 2px 100%; /* half of the width of the clock hands */
 ```
 
 雖然旋轉定位點的問題解決了，但是指針位置還是不正確。這是因為我們寫在 `style.css` 中的 `transform: translate();` 內容完全被 JavaScript 加上的 inline-style 覆蓋掉了。
@@ -221,7 +221,7 @@ hourHand.style.transform = `translate(-4px, 66.6667%) rotate(${hoursDegrees}deg`
 
 ``` js
 const setDate = () => {
-    // do something ...
+  // do something ...
 }
 
 setInterval(setDate, 1000);
@@ -229,9 +229,9 @@ setInterval(setDate, 1000);
 
 ``` js
 const setDate = () => {
-    // do something ...
+  // do something ...
 
-    setTimeout(setDate, 1000);
+  setTimeout(setDate, 1000);
 }
 
 setDate();
@@ -243,9 +243,9 @@ setDate();
 
 ``` js
 const setDate = () => {
-    // do something ...
+  // do something ...
 
-    setTimeout(setDate, 60);
+  setTimeout(setDate, 60);
 }
 ```
 
@@ -281,9 +281,9 @@ secondHand.style.transition = 'transform 1s';
 // ...
 
 if (secondsDegrees === 0) {
-    secondHand.style.transition = 'transform 0s';
+  secondHand.style.transition = 'transform 0s';
 } else {
-    secondHand.style.transition = 'transform 0.05s cubic-bezier(0.1, 2.7, 0.58, 1)';
+  secondHand.style.transition = 'transform 0.05s cubic-bezier(0.1, 2.7, 0.58, 1)';
 }
 
 // ...

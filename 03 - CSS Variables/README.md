@@ -16,9 +16,9 @@ CSS 的變數必須要宣告在 `:root` 這個 pseudo class 中。
 
 ``` css
 :root {
-    --color-base: #ffc600;
-    --spacing: 10px;
-    --blur: 10px;
+  --color-base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
 }
 ```
 
@@ -26,13 +26,13 @@ CSS 的變數必須要宣告在 `:root` 這個 pseudo class 中。
 
 ``` css
 img {
-    padding: var(--spacing);
-    background-color: var(--color-base);
-    filter: blur(var(--blur))
+  padding: var(--spacing);
+  background-color: var(--color-base);
+  filter: blur(var(--blur))
 }
 
 .hl {
-    color: var(--color-base);
+  color: var(--color-base);
 }
 ```
 
@@ -42,11 +42,11 @@ img {
 const inputs = document.querySelectorAll('.controls input');
 
 const handleUpdate = (e) => {
-	  console.log(e.target.value);
+  console.log(e.target.value);
 };
 
 inputs.forEach((input) => {
-	  input.addEventListener('change', handleUpdate);
+  input.addEventListener('change', handleUpdate);
 });
 ```
 
@@ -65,11 +65,11 @@ inputs.forEach((input) => {
 
 ``` js
 const arrowFunction = () => {
-    // ...
+  // ...
 }
 
 const functionExpression = function() {
-    // ...
+  // ...
 }
 ```
 
@@ -109,7 +109,7 @@ const handleUpdate = (e) => {
 
 ``` html
 <h2 style="--color-base: #bada55">
-    Update CSS Variables with <span class="hl">JS</span>
+  Update CSS Variables with <span class="hl">JS</span>
 </h2>
 ```
 
