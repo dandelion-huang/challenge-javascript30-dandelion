@@ -11,7 +11,7 @@
 
 > 按照慣例，CSS 相關的內容會解釋得比較簡單。
 
-CSS 的變數必須要宣告在 `:root` 這個 pseudo class 中。
+CSS 的變數必須要宣告在 `:root` 這個 pseudo class 中。他代表文件的根元素，可以視為優先級更高的 `html` tag selector。
 
 ``` css
 :root {
@@ -34,6 +34,16 @@ img {
   color: var(--color-base);
 }
 ```
+
+在 HTML 中將 `<input>` 的 `type` 設定為 `range` 會以滑動條的形式呈現。
+
+``` html
+<input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px" />
+```
+
+> 你或許會好奇，為什麼只是加上一個 `type` 屬性的說明就讓視覺有這麼大的變化。其實這中間有 shadow DOM 在作用，你可以透過檢查工具來發現它的存在。你也可以透過一些簡單的 JavaScript 來創建 shadow DOM。
+
+> shadow DOM 曾經是 Web Component 的一個重要部分，只是後來似乎並沒有流行起來。不過，我們還是有機會看到一些自製的 shadow DOM component。我就曾經在 apple 官網上看過使用 shadow DOM 實作的 carousel play/pause 按鈕，只是現在已經撤下了。shadow DOM 是一個比較偏小知識的內容，就不在這邊做過多著墨。
 
 接下來我們要利用 event listener 監聽 `<input>` 值，並利用 JavaScript 更新它。
 
@@ -125,6 +135,8 @@ const handleUpdate = (e) => {
 * [\<label\> - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 * [\<input\> - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 * [:root - CSS | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)
+* [Web Components | MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+* [Using shadow DOM - Web Components | MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
 * [JavaScript this - W3Schools](https://www.w3schools.com/js/js_this.asp)
 * [Arrow function expressions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 *[function declaration - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
