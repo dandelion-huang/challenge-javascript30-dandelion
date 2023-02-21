@@ -17,6 +17,7 @@
 | Day 01. JavaScript Drum Kit | [連結](https://dandelion64.github.io/JavaScript30-dandelion/01%20-%20JavaScript%20Drum%20Kit/) | [筆記](https://github.com/dandelion64/Javascript30-dandelion/tree/main/01%20-%20JavaScript%20Drum%20Kit) |
 | Day 02. CSS + JS Clock | [連結](https://dandelion64.github.io/JavaScript30-dandelion/02%20-%20JS%20and%20CSS%20Clock/) | [筆記](https://github.com/dandelion64/Javascript30-dandelion/tree/main/02%20-%20JS%20and%20CSS%20Clock) |
 | Day 03. Playing with CSS Variables and JS | [連結](https://dandelion64.github.io/JavaScript30-dandelion/03%20-%20CSS%20Variables/) | [筆記](https://github.com/dandelion64/Javascript30-dandelion/tree/main/03%20-%20CSS%20Variables) |
+| Day 04. Array Cardio Day 1 | [連結](https://dandelion64.github.io/JavaScript30-dandelion/04%20-%20Array%20Cardio%20Day%201/) | [筆記](https://github.com/dandelion64/Javascript30-dandelion/tree/main/04%20-%20Array%20Cardio%20Day%201) |
 
 ## Reference
 
