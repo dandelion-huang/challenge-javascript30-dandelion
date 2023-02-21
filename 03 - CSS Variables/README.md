@@ -139,7 +139,7 @@ const handleUpdate = (e) => {
 * [Using shadow DOM - Web Components | MDN](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
 * [JavaScript this - W3Schools](https://www.w3schools.com/js/js_this.asp)
 * [Arrow function expressions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-*[function declaration - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
+* [function declaration - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
 * [function expressions - JavaScript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
 * [data-* - HTML | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-*)
 * [CSSStyleDeclaration.setProperty() - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty)
