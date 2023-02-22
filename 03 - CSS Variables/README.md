@@ -5,13 +5,13 @@
 ### 知識點
 
 * HTML `<label>` 和 `<input>` 標籤。
-* CSS Variables 與 `:root` pseudo class。
+* CSS Variables 與 `:root` 偽類別 (pseudo-class)。
 
 ### 步驟
 
 > 按照慣例，CSS 相關的內容會解釋得比較簡單。
 
-CSS 的變數必須要宣告在 `:root` 這個 pseudo class 中。他代表文件的根元素，可以視為優先級更高的 `html` tag selector。
+CSS 的變數必須要宣告在 `:root` 這個 pseudo-class 中。他代表文件的根元素，可以視為優先級更高的 `html` tag selector。
 
 ``` css
 :root {
