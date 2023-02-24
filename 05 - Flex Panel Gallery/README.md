@@ -6,7 +6,7 @@
 
 ### 知識點
 
-* `console` 這個 Web APIs 的方法。
+* CSS flexbox 的使用。
 
 ### 步驟
 
