@@ -1,6 +1,6 @@
 # AJAX Type Ahead
 
-練習使用 AJAX (Asynchronous JavaScript and XML) 以及刪選效果。
+練習使用 AJAX (Asynchronous JavaScript and XML) 以及篩選效果。
 
 ### 知識點
 
