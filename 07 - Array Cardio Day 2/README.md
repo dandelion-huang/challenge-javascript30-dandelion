@@ -85,7 +85,8 @@ console.table(comments);
 簡單地利用 `Array.prototype.splice()` 方法添加一些元素：
 
 ``` js
-comments.splice(4,
+comments.splice(
+  4,
   0,
   { text: 'I am hungry...', id: 265031 },
   { text: 'QAQ...', id: 957128 }
