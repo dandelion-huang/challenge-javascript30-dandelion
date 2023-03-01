@@ -22,9 +22,9 @@
 
 ``` js
 const isAnyAdult = people.some((person) => {
-	const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
-	if (currentYear - person.year >= 18) return true;
+  if (currentYear - person.year >= 18) return true;
 });
 
 console.log(isAnyAdult);
@@ -32,9 +32,9 @@ console.log(isAnyAdult);
 
 ``` js
 const isEveryAdult = people.every((person) => {
-	const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
-	if (currentYear - person.year >= 18) return true;
+  if (currentYear - person.year >= 18) return true;
 });
 
 console.log(isEveryAdult);
