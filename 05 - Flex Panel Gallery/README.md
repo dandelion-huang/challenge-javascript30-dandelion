@@ -85,7 +85,7 @@
 ``` css
 .panel.is-active {
   flex: 5 0 auto;
-	font-size: 40px;
+  font-size: 40px;
 }
 ```
 
@@ -126,12 +126,12 @@ panels.forEach((panel) => panel.addEventListener('click', toggleOpen));
 
 ``` js
 const toggleOpen = (e) => {
-	panels.forEach((panel) => {
-		if (panel.classList.contains('is-active')) {
-			panel.classList.remove('is-active');
-		}
-	});
-	e.target.classList.add('is-active');
+  panels.forEach((panel) => {
+    if (panel.classList.contains('is-active')) {
+      panel.classList.remove('is-active');
+    }
+  });
+  e.target.classList.add('is-active');
 };
 ```
 

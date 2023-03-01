@@ -187,7 +187,7 @@ console.table(alpha);
 const transportation = data.reduce((obj, item) => {
   obj[item] = obj[item] ? ++obj[item] : 1;
 
-	return obj;
+  return obj;
 }, {});
 console.log(transportation);
 ```

@@ -6,6 +6,12 @@
 
 * `Array.prototype.some()` 方法。
 * `Array.prototype.every()` 方法。
+* `Array.prototype.find()` 方法。
+* `Array.prototype.findIndex()` 方法。
+* `Array.prototype.findLast()` 方法。
+* `Array.prototype.findLastIndex()` 方法。
+* `Array.prototype.slice()` 方法。
+* `Array.prototype.splice()` 方法。
 
 ### 步驟
 

@@ -63,7 +63,7 @@ Promise.race([
 
 ``` js
 const endpoint =
-	'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+  'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
 ```
 
 我們可以透過這種方式觀察 `fetch()` 的回傳值（是一個 `Promise` 物件）。
@@ -77,8 +77,8 @@ console.log(promise); // Promise {<pending>}
 
 ``` js
 fetch(endpoint)
-	.then((blob) => blob.json())
-	.then((data) => console.log(data));
+  .then((blob) => blob.json())
+  .then((data) => console.log(data));
 ```
 
 現在將這些 `data` 賦值予 `cities`。
@@ -87,8 +87,8 @@ fetch(endpoint)
 const cities = [];
 
 fetch(endpoint)
-	.then((blob) => blob.json())
-	.then((data) => cities.push(...data));
+  .then((blob) => blob.json())
+  .then((data) => cities.push(...data));
 ```
 
 > 此處所謂的 BLOB，指的是 Binary Large Object，一個相當於原始二元資料的不可變物件。
@@ -101,10 +101,10 @@ fetch(endpoint)
 
 ``` js
 const findMatches = (wordToMatch, cities) => {
-	return cities.filter((place) => {
-		const regex = new RegExp(wordToMatch, 'gi');
-		return place.city.match(regex) || place.state.match(regex);
-	});
+  return cities.filter((place) => {
+    const regex = new RegExp(wordToMatch, 'gi');
+    return place.city.match(regex) || place.state.match(regex);
+  });
 };
 ```
 
@@ -116,7 +116,7 @@ const findMatches = (wordToMatch, cities) => {
 
 ``` js
 const numberWithCommas = (x) => {
-	return x.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  return x.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 };
 ```
 
@@ -131,8 +131,8 @@ const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 
 const displayMatches = (e) => {
-	const matchArray = findMatches(e.target.value, cities);
-	const html = matchArray.map((place) => {
+  const matchArray = findMatches(e.target.value, cities);
+  const html = matchArray.map((place) => {
     const regex = new RegExp(e.target.value, 'gi');
     const cityName = place.city.replace(regex, `<span class="hl">${e.target.value}</span>`);
     const stateName = place.state.replace(regex, `<span class="hl">${e.target.value}</span>`);
@@ -146,7 +146,7 @@ const displayMatches = (e) => {
   })
   .join('');
 
-	suggestions.innerHTML = html;
+  suggestions.innerHTML = html;
 };
 
 searchInput.addEventListener('keyup', displayMatches);

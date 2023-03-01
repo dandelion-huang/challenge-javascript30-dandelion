@@ -90,8 +90,8 @@ const functionExpression = function() {
 // ...
 
 inputs.forEach((input) => {
-	input.addEventListener('input', handleUpdate);
-	input.addEventListener('change', handleUpdate);
+  input.addEventListener('input', handleUpdate);
+  input.addEventListener('change', handleUpdate);
 });
 ```
 
@@ -99,8 +99,8 @@ inputs.forEach((input) => {
 
 ``` js
 const handleUpdate = (e) => {
-	// '' for color input or it'll be undefined
-	const suffix = e.target.dataset.sizing || '';
+  // '' for color input or it'll be undefined
+  const suffix = e.target.dataset.sizing || '';
 };
 ```
 
@@ -108,9 +108,9 @@ const handleUpdate = (e) => {
 
 ``` js
 const handleUpdate = (e) => {
-	// '' for color input or it'll be undefined
-	const suffix = e.target.dataset.sizing || '';
-	document.documentElement.style.setProperty(`--${e.target.name}`, e.target.value + suffix);
+  // '' for color input or it'll be undefined
+  const suffix = e.target.dataset.sizing || '';
+  document.documentElement.style.setProperty(`--${e.target.name}`, e.target.value + suffix);
 };
 ```
 
