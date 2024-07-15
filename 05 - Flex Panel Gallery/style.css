@@ -1,7 +1,7 @@
 html {
 	box-sizing: border-box;
 	background: #ffc600;
-	font-family: 'helvetica neue';
+	font-family: 'helvetica neue', sans-serif;
 	font-size: 20px;
 	font-weight: 200;
 }
@@ -65,7 +65,6 @@ body {
   flex: 1 0 auto;
 	margin: 0;
 	width: 100%;
-  /* border: 1px solid red; */
 	transition: transform 0.5s 0.7s; /* delay: 0.7s */
   pointer-events: none;
 }
