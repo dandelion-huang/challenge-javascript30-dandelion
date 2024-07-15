@@ -3,13 +3,6 @@ const endpoint =
 
 const cities = [];
 
-// const promise = fetch(endpoint);
-// console.log(promise);
-
-// fetch(endpoint)
-// 	.then((blob) => blob.json())
-// 	.then((data) => cities.push(...data));
-
 const fetchCities = async () => {
   const response = await fetch(endpoint);
   const result = await response.json();
