@@ -11,11 +11,7 @@ const setTransition = () => {
 };
 
 const shouldFixDegrees = (date) => {
-	if (date === 0) {
-		return true;
-	}
-
-	return false;
+		return date === 0;
 };
 
 const setDate = () => {
